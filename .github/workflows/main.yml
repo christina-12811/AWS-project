@@ -12,14 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       
-        steps:
-- uses: actions/checkout@v3
-- name: Set up Node.js
-  uses: actions/setup-node@v3
-  with:
-    node-version: '20.x'
-
+      - name: Checkout the files
+        uses: actions/checkout@v2
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
